@@ -22,12 +22,12 @@ class PostTableViewCell: UITableViewCell {
             otherLabel.text = post.tagline
             thisLabel.text = "Comments: \(post.commentsCount)"
             thisOtherLabelAsWell.text = "Votes: \(post.votesCount)"
-            //updatePreviewImage()
+            updatePreviewImage()
         }
     }
     func updatePreviewImage() {
         guard let post = post else { return }
-        updatePreviewImage.image = UIImage(named: "aplaceforholders")
+        imageLabel.image = UIImage(named: "aplaceforholders")
     }
     override func awakeFromNib() {
         super.awakeFromNib()
