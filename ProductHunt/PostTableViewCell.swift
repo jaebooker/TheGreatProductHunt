@@ -15,6 +15,20 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var imageLabel: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var otherLabel: UILabel!
+    var post: Post? {
+        didSet {
+            guard let post = post else { return }
+            nameLabel.text = post.name
+            otherLabel.text = post.tagline
+            thisLabel.text = "Comments: \(post.commentsCount)"
+            thisOtherLabelAsWell.text = "Votes: \(post.votesCount)"
+            //updatePreviewImage()
+        }
+    }
+    func updatePreviewImage() {
+        guard let post = post else { return }
+        updatePreviewImage.image = UIImage(named: "aplaceforholders")
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
