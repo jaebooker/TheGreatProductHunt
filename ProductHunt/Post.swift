@@ -7,6 +7,9 @@
 //
 
 import Foundation
+struct PostList: Decodable {
+    var posts: [Post]
+}
 struct Post {
     let id: Int
     let name: String
@@ -35,5 +38,6 @@ extension Post: Decodable {
         votesCount = try postsContainer.decode(Int.self, forKey: .votesCount)
         commentsCount = try postsContainer.decode(Int.self, forKey: .commentsCount)
         previewImageURL = try postsContainer.decode(URL.self, forKey: .previewImageURL)
+        let screenshotURLContainer = try postsContainer.nestedContainer(keyedBy: PreviewImageURLKeys.self, forKey: .previewImageURL)
     }
 }
