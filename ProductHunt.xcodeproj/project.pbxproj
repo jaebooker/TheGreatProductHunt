@@ -17,6 +17,9 @@
 		0D792F60220CD6DA00F4ADCA /* ProductHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D792F5F220CD6DA00F4ADCA /* ProductHuntUITests.swift */; };
 		0D792FB1220E200600F4ADCA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D792FB0220E200600F4ADCA /* Post.swift */; };
 		0D792FB3220E284200F4ADCA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D792FB2220E284200F4ADCA /* PostTableViewCell.swift */; };
+		0D9EDB8F2213D14600BB3D98 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EDB8E2213D14600BB3D98 /* CommentsViewController.swift */; };
+		0D9EDB912213D66900BB3D98 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EDB902213D66900BB3D98 /* CommentsTableViewCell.swift */; };
+		0D9EDB932213E30900BB3D98 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EDB922213E30900BB3D98 /* Comment.swift */; };
 		0DE2AD19221288D5008316F4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2AD18221288D5008316F4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		0D792F61220CD6DA00F4ADCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D792FB0220E200600F4ADCA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0D792FB2220E284200F4ADCA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		0D9EDB8E2213D14600BB3D98 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		0D9EDB902213D66900BB3D98 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		0D9EDB922213E30900BB3D98 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		0DE2AD18221288D5008316F4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +121,9 @@
 				0D792FB0220E200600F4ADCA /* Post.swift */,
 				0D792FB2220E284200F4ADCA /* PostTableViewCell.swift */,
 				0DE2AD18221288D5008316F4 /* NetworkManager.swift */,
+				0D9EDB8E2213D14600BB3D98 /* CommentsViewController.swift */,
+				0D9EDB902213D66900BB3D98 /* CommentsTableViewCell.swift */,
+				0D9EDB922213E30900BB3D98 /* Comment.swift */,
 			);
 			path = ProductHunt;
 			sourceTree = "<group>";
@@ -270,10 +279,13 @@
 			files = (
 				0DE2AD19221288D5008316F4 /* NetworkManager.swift in Sources */,
 				0D792F3F220CD6D500F4ADCA /* FeedViewController.swift in Sources */,
+				0D9EDB8F2213D14600BB3D98 /* CommentsViewController.swift in Sources */,
 				0D792F3D220CD6D500F4ADCA /* AppDelegate.swift in Sources */,
 				0D792FB3220E284200F4ADCA /* PostTableViewCell.swift in Sources */,
 				0D792F45220CD6D500F4ADCA /* ProductHunt.xcdatamodeld in Sources */,
 				0D792FB1220E200600F4ADCA /* Post.swift in Sources */,
+				0D9EDB932213E30900BB3D98 /* Comment.swift in Sources */,
+				0D9EDB912213D66900BB3D98 /* CommentsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
