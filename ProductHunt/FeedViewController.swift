@@ -31,13 +31,19 @@ class FeedViewController: UIViewController {
     }
     func updateFeed(){
         networkManager.getPosts() { result in
-            self.posts = result
+            switch result {
+            case let .success(posts):
+                self.posts = posts
+            case let .failure(error):
+                print(error)
+            }
         }
     }
 }
 extension FeedViewController: UITableViewDataSource {
     /// Determines how many cells will be shown on the table view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return posts.count
         return posts.count
     }
     
@@ -56,7 +62,7 @@ extension FeedViewController: UITableViewDelegate {
         guard let commentsView = storyboard.instantiateViewController(withIdentifier: "commentsView") as? CommentsViewController else {
             return
         }
-        commentsView.comments = ["WOOAHAHAH!", "Guitar solo", "Get down with the sickness!"]
+        commentsView.postID = post.id
         navigationController?.pushViewController(commentsView, animated: true)
     }
 }

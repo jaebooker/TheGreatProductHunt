@@ -9,7 +9,7 @@
 import Foundation
 struct Comment: Decodable {
     var id: Int
-    var name: String
+    var body: String
 }
 struct CommentApiResponse: Decodable {
     var comments: [Comment]
